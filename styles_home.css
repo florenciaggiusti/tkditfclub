@@ -1,0 +1,272 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	background-color:#BBBBBB;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.caja{
+	width: 940px; /*ancho*/
+	position: relative;
+	margin: 0 auto;
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+
+}
+
+nav a{
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.caja img{
+	width: 300px;
+}
+
+
+
+nav a:hover{
+	color: yellow;
+	transition: 400ms;
+}
+
+/*//////////////////////////////////////*/
+
+.informacion  h1{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 40px 10px 40px 100px;
+}
+
+.informacion p:not(.nombre){
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 10px;
+
+}
+
+.informacion h1:hover{
+	color: yellow;
+	transition: 400ms;
+}
+
+.nombre{
+	margin-left: 150px;
+	font-weight: bolder;
+}
+
+.fotos img{
+	width: 40%;
+	height: 400px;
+	margin-top: 20px;
+	margin-bottom:50px; 
+	border-radius: 10px;
+}
+
+.imagen1{
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.imagen2{
+	float: right;
+	margin-right: 5%;
+}
+
+.deberes{
+	margin: 30px;
+}
+
+.deberes li{
+	font-weight: bold;
+	margin-left: 35px;
+	margin: 20px;
+	font-size: 30px;
+}
+
+.deberes p{
+	margin: 10px;
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.horarios{
+	margin-top: 10px;
+	display: block;
+}
+
+.direccion{
+	float: left;
+	margin: 10px;
+	margin-bottom: 10px;
+}
+
+.direccion h2{
+	margin: 40px;
+	font-size: 50px;
+	font-weight: bold;
+	float:left;
+}
+
+.direccion h2:hover{
+	color: yellow;
+	transition: 400ms;
+}
+
+.direccion p{
+	margin-left: 50px;
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.direccion p:hover{
+	color: yellow;
+	transition: 400ms;
+}
+
+.cat-horarios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+.cat-horarios ul{
+	margin-top: 20px;
+}
+
+.cat-horarios li{
+	font-weight: bold;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.cat-horarios li::before{
+	content: "◌ "
+}
+
+.cat-horarios p{
+	margin-left: 90px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.cat-horarios h3{
+	font-weight: bolder;
+	font-size: 35px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+footer{
+	margin: 0;
+
+}
+
+footer h3{
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+footer .iconos{
+	display: inline-flex;
+	position: relative;
+	margin-left: 50%;
+	margin-top: 40px;
+	width: 100px;
+}
+
+footer .icono1{
+    margin-left: -350px;
+	width: 75px;
+}
+
+footer .icono2{
+	margin-left: -10px;
+	width: 75px;
+}
+
+footer .icono3{
+	margin-left: 240px;
+	margin-bottom:15px;
+	width: 80px;
+}
+
+@media screen and (max-width: 480px){
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.caja img{
+		width: 100px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+
+	nav a{
+		font-size: 15px;
+	}
+
+	nav li{
+		margin-bottom: 10px;
+	}
+
+	.informacion h1{
+		font-size: 20px;
+		margin:30px 0 30px 0;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.deberes{
+		text-align: center;
+	}
+
+	
+
+	footer h3{
+		font-size: 20px;;
+	}
+
+	footer .icono1{
+		margin-left: -150px;
+	}
+
+	footer .icono2{
+		margin-left: -30px;
+	}
+	footer .icono3{
+		margin-left: 40px;
+	}
+}
